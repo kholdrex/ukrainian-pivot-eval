@@ -1,5 +1,7 @@
 # English pivot for Ukrainian questions
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23112388.svg)](https://doi.org/10.5281/zenodo.23112388)
+
 Code, prompts, all model replies and analysis for the paper *Does translation into English help open language models
 answer Ukrainian questions?* (O. Kholodniak).
 
