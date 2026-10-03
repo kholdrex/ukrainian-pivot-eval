@@ -11,8 +11,10 @@ replies were not changed. Changes to the code afterwards:
   merged CS and CA); the letter after "answer"/"відповідь" may be lowercase (no stored reply was affected); two
   post-hoc sensitivity analyses of ZNO keep each repeated question once and, in addition, drop the three questions
   whose picture is missing from the dataset (`zno_sensitivity` in `summary.json`).
-- The translation-form check requires a non-empty question and non-empty options; the first version checked only
-  the option letters and counted 457 Llama 3.2 3B translations without the question as well formed.
+- The translation-form check requires a "Question:" line with a non-empty question and non-empty options A-D; the
+  first version checked only the option letters. With the current check 779 of the 2,686 Llama 3.2 3B translations
+  fail: 421 have an empty question, 253 keep the question and options but drop the "Question:" label, 25 contain
+  only an answer letter, and the rest change the options or the layout in other ways.
 - Analysis requires the complete set of planned answers, so that the Holm correction always covers the planned
   family. Jobs are named tuples; the model list moved to `experiment.py`; figures are written to
   `figures/accuracy.png`.
